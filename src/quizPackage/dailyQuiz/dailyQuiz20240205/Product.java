@@ -1,4 +1,4 @@
-package lecture20240205.dailyQuiz;
+package quizPackage.dailyQuiz.dailyQuiz20240205;
 
 public class Product  implements Promotion {
     private String name;

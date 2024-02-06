@@ -1,4 +1,4 @@
-package lecture20240205.dailyQuiz;
+package quizPackage.dailyQuiz.dailyQuiz20240205;
 
 public class Main {
     public static void main(String[] args) {
