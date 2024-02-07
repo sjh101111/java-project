@@ -29,6 +29,6 @@ public class LoginExample {
 
         if (errors.length() > 0) {
             throw new LoginException(errors.toString().trim()); // Throw exception with all accumulated errors
-        }
+        } // StringBulider 참조 변수를 String으로 변환하고 trim을 통해 불필요한 공백 및 개행 제거
     }
 }
