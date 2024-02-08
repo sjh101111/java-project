@@ -10,6 +10,6 @@ public class IntFinding {
             } else {
                 answer = 0;
             }
-        } return answer;
-    }
-}
+        } return answer; // int answer랑 else구문 없애도 0과 1만 리턴하기 때문에 상관없다
+    }                    // 어짜피 처음에 answer에 0을 할당했기 때문에 else구문 필요 없음
+}                        // 아니면 answer선언안하고 if문에서 return 1, if문나와서 return 0

@@ -6,7 +6,7 @@ public class CountUp {
         if ( start_num <= end_num) {
             for (int i = 0; i <= end_num-start_num ; i++) {
                 answer[i]= start_num + i;
-            }
+            } //i에 start_num 할당 가능
         }
         return answer;
     }
