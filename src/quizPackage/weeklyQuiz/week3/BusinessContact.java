@@ -14,7 +14,7 @@ public class BusinessContact extends Contact {
 
     @Override
     public String toString() {
-        return "Name: " + super.getName() + ", Phone: " + super.getPhoneNumber()
-        + ", company: " + this.company; // Add more details as needed
+        return "이름: " + super.getName() + ", 전화번호: " + super.getPhoneNumber()
+        + ", 회사: " + this.company; // Add more details as needed
     }
 }

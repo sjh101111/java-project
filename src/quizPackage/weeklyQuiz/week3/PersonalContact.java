@@ -10,7 +10,7 @@ public class PersonalContact extends Contact {
 
     @Override
     public String toString() {
-        return "Name: " + super.getName() + ", Phone: " + super.getPhoneNumber()
-                + ", relationship: " + this.relationship; // Add more details as needed
+        return "이름: " + super.getName() + ", 전화번호: " + super.getPhoneNumber()
+                + ", 관계: " + this.relationship; // Add more details as needed
     }
 }

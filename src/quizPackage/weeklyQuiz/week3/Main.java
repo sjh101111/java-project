@@ -17,7 +17,6 @@ public class Main {
             int input = scanner.nextInt();
 
             if (input == 1) {
-
                 System.out.print("이름을 입력하세요: ");
                 String name = scanner.next();
                 System.out.print("전화번호를 입력하세요: ");
@@ -25,8 +24,8 @@ public class Main {
                 System.out.print("회사명을 입력하세요: ");
                 String company = scanner.next();
 
-                Contact businessContact = new BusinessContact(name, phoneNumber, company);
-                contacts.add(businessContact);
+//                Contact businessContact = new BusinessContact(name, phoneNumber, company);
+                contacts.add(new BusinessContact(name, phoneNumber, company));
             } else if (input == 2) {
                 System.out.print("이름을 입력하세요: ");
                 String name = scanner.next();
@@ -35,8 +34,8 @@ public class Main {
                 System.out.print("관계을 입력하세요: ");
                 String relationship = scanner.next();
 
-                Contact personalContact = new PersonalContact(name, phoneNumber, relationship);
-                contacts.add(personalContact);
+//                Contact personalContact = new PersonalContact(name, phoneNumber, relationship);
+                contacts.add(new PersonalContact(name, phoneNumber, relationship));
             } else if (input == 3) {
                 for (int i = 0; i < contacts.size(); i++) {
                     Contact contact = contacts.get(i);
