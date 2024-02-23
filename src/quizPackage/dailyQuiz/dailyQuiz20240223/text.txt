@@ -1,0 +1,37 @@
+프로그래머스 퀴즈 복습
+SELECT
+- https://school.programmers.co.kr/learn/courses/30/lessons/59034?language=mysql
+ 답:
+ SELECT *
+ FROM ANIMAL_INS
+ ORDER BY ANIMAL_INS.ANIMAL_ID;
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/131112?language=mysql
+ 답:
+ select FACTORY_ID, FACTORY_NAME, ADDRESS from FOOD_FACTORY
+ where address like '강원도%'
+ group by FACTORY_ID
+ order by FACTORY_ID
+ ;
+
+ 내장함수
+ -https://school.programmers.co.kr/learn/courses/30/lessons/59406?language=mysql
+ 답:
+ SELECT COUNT(*) FROM ANIMAL_INS;
+
+ IS NULL
+ -https://school.programmers.co.kr/learn/courses/30/lessons/59407?language=mysql
+ 답:
+ SELECT ANIMAL_ID FROM ANIMAL_INS
+ WHERE NAME IS NOT NULL
+ ORDER BY ANIMAL_ID;
+
+ JOIN
+ -https://school.programmers.co.kr/learn/courses/30/lessons/59042?language=mysql
+ 답:
+ SELECT  A.ANIMAL_ID, A.NAME FROM ANIMAL_OUTS
+ AS A LEFT JOIN ANIMAL_INS AS B
+ ON A.ANIMAL_ID=B.ANIMAL_ID
+ WHERE B.ANIMAL_ID IS NULL
+ ORDER BY A.ANIMAL_ID
+ ;
