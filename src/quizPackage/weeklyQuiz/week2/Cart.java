@@ -2,6 +2,7 @@ package quizPackage.weeklyQuiz.week2;
 
 public class Cart {
     public Product [] products;
+
     public Cart( Product[] products) {
         this.products = products;
     }

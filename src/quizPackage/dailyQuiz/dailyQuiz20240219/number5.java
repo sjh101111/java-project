@@ -12,9 +12,13 @@ public class number5 {
         }
         return result;
     }
-
     public static void main(String[] args) {
-        int max = maxOrMin(Math::max);
+        int max = maxOrMin(new IntBinaryOperator() {
+            @Override
+            public int applyAsInt(int left, int right) {
+                return Math.max(left, right);
+            }
+        });
         System.out.println("최대값 : " + max);
 
         int min = maxOrMin(Math::min

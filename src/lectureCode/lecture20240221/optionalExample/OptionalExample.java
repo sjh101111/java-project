@@ -8,6 +8,13 @@ public class OptionalExample {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
 
+        list.add(1);
+        list.add(1,4);
+        String str = "" + list.get(0);
+        list.remove(0);
+        list.remove(4);
+
+
         OptionalDouble average = list.stream()
                 .mapToInt(Integer::intValue)
                 .average();

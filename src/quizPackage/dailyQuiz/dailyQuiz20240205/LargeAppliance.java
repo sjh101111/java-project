@@ -1,8 +1,8 @@
 package quizPackage.dailyQuiz.dailyQuiz20240205;
 
 public class LargeAppliance extends Product {
-    LargeAppliance (String name, int price, double weight) {
-        super(name, price, (int) weight);
+    LargeAppliance(String name, int price, int weight) {
+        super(name, price, weight);
     }
 
     @Override

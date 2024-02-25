@@ -6,8 +6,10 @@ import java.util.Stack;
 
 public class StackAlgorithm {
     public static void main(String[] args) {
+
         Stack<String> stringStack = new Stack<>();
         List<String> stringList = new ArrayList<>();
+
         stringList.add("(");
         stringList.add("(");
         stringList.add("(");
@@ -15,6 +17,7 @@ public class StackAlgorithm {
         stringList.add(")");
         stringList.add(")");
         stringList.add("(");
+
         for (String list : stringList) {
             if (list.equals("(")) {
                 stringStack.push(list);
